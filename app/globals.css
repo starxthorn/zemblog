@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: white;
+  color: black;
+  overflow-x: hidden;
+}
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .primary-heading {
+    @apply font-bold text-[32px] lg:text-5xl
+  }
+  .secondary-heading {
+    @apply font-semibold text-2xl lg:text-4xl
+  }
+  .tertiary-heading {
+    @apply font-semibold text-[20px] lg:text-2xl
+  }
+  .paragraph {
+    @apply text-gray-600 text-xs lg:text-lg font-medium
+  }
+}
